@@ -34,6 +34,19 @@ function theme_prefix_setup() {
 }
 add_action( 'after_setup_theme', 'theme_prefix_setup' );
 
+/* Cette fonction pertmet de masquer/afficher le lien admin dans le menu */
+
+function add_admin_link_to_menu( $items, $args ) {
+    if ( $args->theme_location == 'main-menu' && is_user_logged_in() && current_user_can( 'manage_options' ) ) {
+        $admin_link = '<li><a href="' . admin_url() . '">Admin</a></li>';
+        $items .= $admin_link;
+    }
+    return $items;
+}
+add_filter( 'wp_nav_menu_items', 'add_admin_link_to_menu', 10, 2 );
+
+
+
 
 
 // END ENQUEUE PARENT ACTION

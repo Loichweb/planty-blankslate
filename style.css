@@ -24,8 +24,8 @@ body {
     width: 100%;
 }
 
-header,
-nav {
+.header,
+.nav {
     display: flex;
     background-color: white;
     align-items: center;
@@ -38,7 +38,7 @@ nav {
 
     
     /* Réorganiser le menu */
-    header{
+    .header{
       display: block;
       flex-direction: column;
       width: 100%;
@@ -52,9 +52,10 @@ nav {
         padding-bottom: 20px;
     }
 
-    .header,nav {
+    .header,.nav {
         gap: 4px;
     }
+    
 
     }
   
@@ -128,7 +129,5 @@ footer a {
     text-decoration: none;
     color: black;
 }
-=======
-}
 
->>>>>>> parent of 06ec6cb (15 avril 23h59)
+/*Form */
