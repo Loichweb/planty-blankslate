@@ -12,9 +12,11 @@
 
 <div id="wrapper" class="hfeed">
 
-<header id="header" role="banner">
+<header class="header" role="banner">
 
 <div id="branding" class="site-logo">
+
+
 <?php
 // Vérifier si le thème prend en charge le logo personnalisé
 if ( function_exists( 'the_custom_logo' ) ) {
@@ -25,12 +27,12 @@ if ( function_exists( 'the_custom_logo' ) ) {
 
 </div>
 
-<nav class="Flexdirection" role="navigation" >
+<nav class="Flexdirection nav" role="navigation" >
  <div class="Navmenu"> 
  <?php wp_nav_menu( array( 'theme_location' => 'main-menu', 'link_before' => '<span itemprop="name">', 'link_after' => '</span>' ) ); ?>
  </div>   
 <div id="ordermenu"> 
-        <button>Commander </button>
+		<a href="http://localhost:10009/commander/"> <button>Commander </button></a>
 </div>
 </nav>
 
