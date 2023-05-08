@@ -131,3 +131,57 @@ footer a {
 }
 
 /*Form */
+
+.input-cont {
+    display: flex;
+    margin-top: 1em;
+  }
+  
+  .fruit-input {
+    border-radius: 5px 0 0 5px;
+    border: none;
+    width: 51px;
+    text-align: center;
+    padding: 19px 4px;
+  }
+  
+  .buttons-cont {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 391px;
+    margin: auto;
+  }
+  .modify-btns {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .modify-btns button {
+    background-color: #dc9f96;
+    border: none;
+    color: white;
+    padding: 6px 9px;
+    cursor: pointer;
+  }
+  
+  .modify-btns .btn-plus {
+    border-radius: 0 5px 0 0;
+    border-bottom: 1px white solid;
+  }
+  
+  .btn-mois {
+    border-radius: 0 0 5px 0;
+  }
+  
+  .btn-ok {
+    background-color: #e0b9b4;
+    border: none;
+    border-radius: 5px;
+    margin-top: 1em;
+    padding: 1.5em;
+    min-width: 100px;
+    color: white;
+    cursor: pointer;
+  }
+  
