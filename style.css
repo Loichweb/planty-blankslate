@@ -56,6 +56,9 @@ body {
         gap: 4px;
     }
     
+    #ordermenu {
+        width: auto;
+    }
 
     }
   
@@ -78,7 +81,7 @@ body {
 nav ul {
     display: flex;
     flex-direction: row;
-    gap: 60px;
+    gap: 45px;
     white-space: nowrap;
 }
 
@@ -97,23 +100,23 @@ nav a:hover {
 }
 
 /* Boutton nav*/
-#ordermenu {
-    width: 236px;
 
-}
-
-#ordermenu button {
+#ordermenu  {
     background-color:#DC9F96 ;
     color: white;
     border: none;
     cursor: pointer;
     font-family: "syne";
-    width: 100%;
     padding: 30px;
     font-size: 1em;
+    width: 236px;
+    text-align: center;
   }
+#ordermenu a {
+    color: white;
+}
 
-#ordermenu button:hover {
+#ordermenu:hover {
     background-color: #C02E44 ;
 }
 
